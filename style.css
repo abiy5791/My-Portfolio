@@ -171,7 +171,7 @@ opacity: 1;
   width: 395px;
   height: 500px;
   border-radius: 10px;
-  background-image: url(../port/sampleimg/cardlist3.jpg);
+  background-image: url(sampleimg/cardlist3.jpg);
   background-size: cover;
   
   }
@@ -179,7 +179,7 @@ opacity: 1;
   background-color: rgba(255, 255, 255, 0.04);
   width: 395px;height: 500px;
   border-radius: 10px;
-  background-image: url(../port/sampleimg/cardlist2.jpg);
+  background-image: url(sampleimg/cardlist2.jpg);
   background-size: cover;
   position: relative;
 
@@ -188,7 +188,7 @@ opacity: 1;
   background-color: rgba(255, 255, 255, 0.04);
   width: 395px;height: 500px;
   border-radius: 10px;
-  background-image: url(../port/sampleimg/mobile.jpg);
+  background-image: url(sampleimg/mobile.jpg);
   background-size: cover;
   position: relative;
 }
