@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script
+      src="https://kit.fontawesome.com/8327aa3c5b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="scroll-line"></div>
+
+  <div class="nav">
+    <ul>
+      <li><a class="active" href="#top">Home</a></li>
+      <li><a href="myworks.html" target="_blank">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#service">Services</a></li>
+    </ul>
+  </div>
+
+  <div class="clock"></div>
+  <div id="top" class="card1">
+    <img class="profile" src="./sampleimg/profile.jpg" alt="my profile image" />
+      <h1 class="name">Hi I am Abiy</h1>
+      <div id="letter"></div>
+  </div>
+
+  <div id="bottom" class="card3">
+    <p class="moto">
+      I design and develop experiences that make people's lives simple. <br />
+      "Abiy Teklu" <br />
+
+      <a href="myworks.html" target="_blank" style="text-decoration: none; color: black;"><button>See My
+          Work</button></a>
+    </p>
+
+    <div class="cards_list">
+      <h4 id="service">Services</h4>
+      <div class="card_list1">
+        <div class="card_list_paragraph">
+          <h2> Web design</h2>
+          <p style="color:rgba(0, 0, 0, 0.725); font-size: 13px;">Web design encompasses many different skills and disciplines in the
+            production and maintenance of websites.
+            Web design is the process of planning, conceptualizing, and arranging content online.</p>
+        </div>
+      </div>
+      <div class="card_list2">
+        <div class="card_list_paragraph">
+          <h2>Graphics design</h2>
+          <p style="color: rgba(0, 0, 0, 0.725); font-size: 13px;">Graphic design is the profession and academic discipline whose
+            activity consists in projecting visual communications intended to transmit specific messages to social
+            groups, with specific objectives. Design is based on the principle of "form follows a specific function".
+          </p>
+        </div>
+      </div>
+      <div class="card_list3">
+        <div class="card_list_paragraph">
+          <h2>Mobile App Development </h2>
+          <p style="color: rgba(0, 0, 0, 0.725); font-size: 13px;">Mobile application development is the process to making software for
+            smartphones and digital assistants, most commonly for Android and iOS. The software can be preinstalled on
+            the device, downloaded from a mobile app store or accessed through a mobile web browser.</p>
+        </div>
+      </div>
+    </div>
+
+    <div  id="about" class="aboutme">
+      
+      <p>
+        <img id="aboutimg" src="./sampleimg/profile.jpg" alt="" />
+        <span> About Me</span> <br />
+        I am an allround web developer. i am a senior programmer with good
+        knowledge of front-end techniques. I can provide more services like
+        web Development , App Development ,Graphics Designing and UI/UX
+        design.
+      </p>
+    </div>
+    
+    <div id="contact" class="contact">
+      <h1 class="contact_header">Contact Me</h1>
+      <div class="contacts followme">
+        <h2>Follow Me</h2>
+        <div class="icon">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"> </i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.github.com/" target="_blank">
+            <i class="fa-brands fa-github"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.telegram.org" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+      <div class="contacts contactme">
+        <h2>Phone Number</h2>
+        <p class="discription">
+          <i class="fa-solid fa-phone"> </i>
+          +2519-37-94-61-86
+        </p>
+      </div>
+      <div class="contacts Address">
+        <h2>Email Address</h2>
+        <p class="discription">
+          <i class="fa-solid fa-envelope"> </i>
+        abte5791@gmail.com
+        </p>
+      </div>
+      <div class="message">
+        <h1>Get In Touch</h1>
+        <p style="color: wheat">
+          Feel free to get in touch with me. i am always open to discussing
+          new projects, creative ideas or opportunities to be part of your
+          visions.
+        </p>
+        <form action="">
+          <input type="text" placeholder="Enter your name" autofocus />
+          <input type="text" placeholder="Enter email address" autofocus />
+          <input type="text" placeholder="Enter your subject" autofocus />
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Message" autofocus></textarea>
+          <button class="submit" type="submit">Send Message</button>
+          <button class="clear" type="reset">Clear</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      Copyright &copy; 2022
+      <span style="color: rgb(0, 255, 234)"> AbiyTeklu</span>
+    </div>
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $(".nav").click(function () {
+      $(this).toggleClass("_expand");
+    });
+  });
+</script>
+<script src="script.js"></script>
+
+</html>

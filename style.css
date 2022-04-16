@@ -1,0 +1,676 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.scroll-line {
+  background-color: rgb(255, 104, 17);
+  width: 0%;
+  height: 5px;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.4s;
+  overflow: hidden;
+  z-index: 3;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  line-height: 50px;
+  justify-content: center;
+}
+.nav ul a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  margin: 0 -50px;
+  font-size: 20px;
+  color: wheat;
+  border-radius: 5px;
+  transition: all 0.4s;
+  opacity: 0;
+  pointer-events: none;
+}
+ul a:hover,
+ul a.active {
+  background-color: rgba(105, 141, 249, 0.549);
+  color: white;
+}
+.nav._expand {
+  width: 680px;
+}
+.nav._expand ul a {
+  padding: 10px 15px;
+  margin: 0 10px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav::before {
+  content: "Menu";
+  position: absolute;
+  color: wheat;
+  font-size: 25px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 50px;
+  z-index: 10;
+  transition: all 0.4s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.nav._expand::before {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.clock {
+  width: 12%;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  padding: 5px;
+  font-size: 15px;
+  color: white;
+  font-family: monospace, "sans-serif";
+  border-radius: 10px;
+  bottom: 0;
+}
+.card1 {
+  display: flex;
+  height: 120vh;
+  background-color: rgb(0, 0, 0);
+  background-image: url(./sampleimg/lee-campbell-DtDlVpy-vvQ-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.card1 .profile {
+  position: absolute;
+  border-radius: 50%;
+  left: 44%;
+  top: 10px;
+  width: 120px;
+  height: 120px;
+}
+.name{
+  position: absolute;
+  color: wheat;
+  font-size: 80px;
+  text-align: right;
+  font-family: papyrus, sans-serif;
+left: 57%;
+
+}
+#letter {
+  position: absolute;
+  width: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  color: wheat;
+  left: 45%;
+  top: 15%;
+}
+.cards_list{
+  position: absolute;
+  top: 20%;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.cards_list h4{
+  position: absolute;
+  top:5%;
+  font-size: 35px;
+  font-weight: bold;
+color: wheat;
+}
+.card_list_paragraph{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom:0%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.681);
+  transition:ease-in 0.5s;
+
+}
+.card_list1:hover .card_list_paragraph{
+ opacity: 1;
+}
+.card_list2:hover .card_list_paragraph{
+opacity: 1;
+}
+.card_list3:hover .card_list_paragraph{
+opacity: 1;
+}
+
+.card_list1{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 395px;
+  height: 500px;
+  border-radius: 10px;
+  background-image: url(../port/sampleimg/cardlist3.jpg);
+  background-size: cover;
+  
+  }
+.card_list2{
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 395px;height: 500px;
+  border-radius: 10px;
+  background-image: url(../port/sampleimg/cardlist2.jpg);
+  background-size: cover;
+  position: relative;
+
+}
+.card_list3{
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 395px;height: 500px;
+  border-radius: 10px;
+  background-image: url(../port/sampleimg/mobile.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.card3 {
+  display: flex;
+  height: 350vh;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+.card3 .moto {
+  font-size: 35px;
+  width: 50%;
+  height: 250px;
+  text-align: center;
+  position: relative;
+  top: 3%;
+  left: 25%;
+  color: wheat;
+  font-family: papyrus,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card3 .moto button {
+  padding: 10px 30px;
+  font-size: 15px;
+  width: 30%;
+  left: 35.5%;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(2, 217, 255, 0.582);
+  cursor: pointer;
+}
+.card3 .moto button:hover {
+  background-color: rgb(44, 76, 255);
+  transition: 0.8s;
+}
+.aboutme {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  padding: 15px;
+
+}
+.aboutme img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: right;
+
+}
+.aboutme p {
+  position:relative;
+  width: 60%;
+  left: 20%;
+  line-height: 30px;
+  color: wheat;
+  padding: 25px;
+}
+.aboutme span {
+  font-size: 40px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  height: 30%;
+  bottom: 3%;
+
+}
+.contact_header {
+  position: absolute;
+  font-size: 45px;
+width: 100%;
+text-align: center;
+  font-weight: bold;
+  color: wheat;
+  top: 5%;
+}
+.contacts {
+  position: relative;
+  color:wheat;
+  width: 25%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+  top: 17%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 5%;
+  left: 65%;
+  margin-bottom: 45px;
+}
+
+.contactme i {
+  position: relative;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.Address i {
+  font-size: 30px;
+  padding: 10px;
+}
+.contacts h2 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+.contacts .discription {
+  line-height: 30px;
+}
+.icon {
+  font-size: 25px;
+}
+.icon i {
+  margin: 0 8px;
+}
+.icon a {
+  text-decoration: none;
+  color: wheat;
+}
+.icon a:hover {
+  color: rgba(255, 166, 0, 0.877);
+  transition: 1.5s;
+}
+.message {
+  position: absolute;
+  bottom: 0%;
+  width: 50%;
+  left: 5%;
+  text-align: center;
+
+}
+.message h1 {
+  color: wheat;
+  margin-bottom: 10px;
+}
+.message input,
+textarea,
+button {
+  position: relative;
+  padding: 15px;
+  display: block;
+  width: 85%;
+  left: 10%;
+  bottom: 1%;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: wheat;
+  border: none;
+  border-bottom: 2px wheat solid;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.message textarea {
+  resize: none;
+  height: 200px;
+}
+.message textarea:focus {
+  outline: solid 1px wheat;
+}
+.message .submit,
+button {
+  width: 25%;
+  color: wheat;
+  background-color: #55500e7c;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  left: 22%;
+}
+.message button:hover {
+  transition: 1s;
+  background-color: wheat;
+  color: black;
+}
+.clear {
+  left: 55%;
+  position: relative;
+  bottom: 62px;
+}
+.footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 50px;
+  padding: 25px;
+  text-align: center;
+  color: wheat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+@media (max-width: 1200px) and (min-width: 600px) {
+  .nav {
+    width: 80px;
+    height: 50px;
+  }
+  .nav ul a {
+    font-size: 13px;
+  }
+  .nav._expand {
+    width: 290px;
+  }
+  .nav._expand ul a {
+    padding: 5px;
+    margin: 0 5px;
+  }
+  .nav::before {
+    font-size: 13px;
+  }
+  .clock{
+  display: none;
+}
+.card1{
+  background-position:right;
+}
+.card1 .profile {
+  width: 100px;
+  height: 100px;
+  top: 40px;
+  left: 24%;
+}
+.name{
+font-size: 40px;
+left: 40%;
+top: 7%;
+}
+#letter {
+  width: 80%;
+  left: 10%;
+  top: 17%;
+  color:rgb(100, 100, 100);
+}
+.card3 .moto{
+  width: 90%;
+  left: 5%;
+}
+.cards_list{
+  flex-direction:column;
+  top: 15%;
+  height: 40%;
+ 
+}
+.cards_list h4{
+  position: relative;
+top: 0%;
+font-size: 25px;
+}
+.card_list1,.card_list2,.card_list3{
+  margin-bottom: 15px;
+  width: 60%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.aboutme{
+    height: 250px;
+    top: 57%;
+}
+.aboutme p{
+  width: 100%;
+  left: 0%;
+  line-height: normal;
+}
+
+.message{
+  float: left;
+  width: 50%;
+  left: 2%;
+  bottom: 22%;
+}
+
+.message input,
+textarea,
+button {
+  padding: 7px;
+  width: 90%;
+  left: 5%;
+  font-size:13px;
+}
+.message textarea {
+  height: 100px;
+}
+.message .submit,
+button {
+  width: 35%;
+  left: 10%;
+}
+.clear {
+  left: 50%;
+  bottom: 47px;
+}
+.message p{
+  font-size: 10px;
+}
+.contacts{
+  float: right;
+  width: 40%;
+  left: 58%;
+  top: 22%;
+  margin-bottom:5px;
+}
+.contacts h2{
+  font-size: 25px;
+}
+.icon i{
+margin: 0 5px;
+}
+.contactme i,.Address i{
+display: none;
+}
+}
+
+@media (max-width: 600px) and (min-width: 364px) {
+  .nav {
+    width: 50px;
+    height: 50px;
+  }
+  .nav ul a {
+    font-size: 10px;
+  }
+  .nav._expand {
+    width: 250px;
+  }
+  .nav._expand ul a {
+    padding: 5px;
+    margin: 0 5px;
+  }
+  .nav::before {
+    font-size: 13px;
+  }
+  .card1{
+    background-image: none;
+    height: 40vh;
+  }
+  .card1 .profile {
+    display: none;
+    }
+  .clock{
+    display: none;
+  }
+.name{
+  font-size: 25px;
+  left: 0;
+  top: 15%;
+  text-align: center;
+  width: 100%;
+}
+#letter {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  left: 0%;
+  top: 25%;
+}
+.card3{
+  flex-direction: column;
+}
+.card3 .moto{
+width: 100%;
+left: 0%;
+top: 0%;
+font-size: 25px;
+}
+.card3 .moto button {
+  padding: 10px 10px;
+  font-size: 15px;
+  width: 40%;
+  left: 30%;
+}
+.cards_list{
+flex-direction: column;
+top: 8%;
+height: 40%;
+}
+.card_list1,.card_list2,.card_list3{
+width: 80%;
+height: 30%;
+}
+.cards_list h4{
+  position: relative;
+top: 0%;
+font-size: 25px;
+}
+.aboutme{
+position:absolute;
+height: 250px;
+top: 50%;
+}
+.aboutme img{
+  width: 120px;
+  height:120px;
+
+}
+.aboutme p{
+ top: 3%;
+left: 0%;
+padding: 0;
+width: 85%;
+line-height: normal;
+left: 10%;
+font-size: 13px;
+}
+.aboutme span{
+  font-size: 27px;
+}
+.contact_header{
+  font-size: 35px;
+  top: 0%;
+}
+.message{
+  width: 100%;
+  left: 0%;
+}
+.message h1{
+  font-size: 25px;
+}
+.message p{
+  font-size: 12px;
+}
+.message input,.message textarea{
+  width: 90%;
+  left: 5%;
+  padding: 5px;
+  font-size: 12px;
+}
+.message textarea{
+  height: 70px;
+}
+.message .submit,button{
+  width: 30%;
+  left: 15%;
+  padding: 10px;
+}
+.clear{
+  left: 53%;
+  bottom: 52px;
+}
+
+.contacts{
+left: 0%;
+width: 100%;
+height: 70px;
+padding: 0;
+margin-bottom: 5px;
+top: 8%;
+}
+.contacts h2{
+  font-size: 15px;
+}
+.icon{
+  font-size: 25px;
+}
+.contactme i,.Address i{
+display: none;
+}
+.followme{
+  height:70px;
+}
+.contacts .discription{
+  font-size: 12px;
+}
+
+.card_list1{
+  width: 355px;
+  height: 400px;
+ margin-bottom: 8px;
+  }
+.card_list2{
+    width: 355px;
+    height: 400px;
+    margin-bottom: 8px;
+    }
+.card_list3{
+      width: 355px;
+      height: 400px;
+      margin-bottom: 8px;
+      }
+}
