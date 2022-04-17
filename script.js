@@ -2,7 +2,7 @@
 // for typeing text style or animation
 
 var i=0,text;
-text = "I’ve already touched on personal branding a bit in this post, but next up I want to look at some websites that are killing it with how they showcase the site owner’s personality and style."
+text = "My Name is Abiy Teklu I am a web designer I’ve already touched on personal branding a bit."
 
 function typing(){
     if(i<text.length){
